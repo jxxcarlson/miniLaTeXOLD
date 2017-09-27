@@ -5,9 +5,19 @@ A new document, `bench.html` will be created.  Open
 this document in a broswer.
 
 The tests are the same as reported on Slack, adn the test document
-is taken from one on the app: http://www.knode.io/#@public/423
+is taken from one on the app: http://www.knode.io/#@public/423 
 
 The files of interest are in `./src/LatexParser`.
 Please see `./src/LatexParser/LatexParser.adoc`
 for moe information.
+
+NOTE. In the tests, the most important line is
+
+  `benchmark1 "formatDocument" LatexParser.Paragraph.formatDocument qftIntroText`
+  
+The function `formatDocument` results in this sequence of calls:
+
+  -> `formatParagraphList`
+  -> `formatParagraph`
+  -> `Render.transformText`
 
