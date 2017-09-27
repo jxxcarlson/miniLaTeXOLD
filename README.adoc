@@ -21,3 +21,4 @@ The function `formatDocument` results in this sequence of calls:
   -> formatParagraph
   -> Render.transformText
 
+Thus `transformText` is exercised paragraph by paragraph on the full document qftIntroText.
