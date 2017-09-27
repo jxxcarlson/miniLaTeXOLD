@@ -17,7 +17,7 @@ NOTE. In the tests, the most important line is
   
 The function `formatDocument` results in this sequence of calls:
 
-  -> `formatParagraphList`
-  -> `formatParagraph`
-  -> `Render.transformText`
+  -> formatParagraphList
+  -> formatParagraph
+  -> Render.transformText
 
