@@ -1,1 +1,13 @@
 # miniLaTeX
+
+To test MiniLaTeX Parser, first run `sh bench.sh` at the root of this folder.
+A new document, `bench.html` will be created.  Open
+this document in a broswer.
+
+The tests are the same as reported on Slack, adn the test document
+is taken from one on the app: http://www.knode.io/#@public/423
+
+The files of interest are in `./src/LatexParser`.
+Please see `./src/LatexParser/LatexParser.adoc`
+for moe information.
+
